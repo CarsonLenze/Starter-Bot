@@ -1,0 +1,115 @@
+[
+  {
+    "name": "ping",
+    "description": "shows uptime and current latency",
+    "options": []
+  },
+  {
+    "name": "help",
+    "description": "Shows all avalible commands and how to use them",
+    "options": []
+  },
+  {
+    "name": "about",
+    "description": "Information about the bot and its authors",
+    "options": []
+  },
+  {
+    "name": "kick",
+    "description": "Kicks a user",
+    "options": [
+      {
+        "type": "USER",
+        "name": "user",
+        "description": "Specify a user",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "name": "reason",
+        "description": "Reason for baning the user",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "info",
+    "description": "Shows information about the user",
+    "options": [
+      {
+        "type": "USER",
+        "name": "user",
+        "description": "Specify a user",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "purge",
+    "description": "Removes up to 100 messages",
+    "options": [
+      {
+        "type": "NUMBER",
+        "name": "amount",
+        "description": "Amount of messages to purge",
+        "required": true,
+        "minValue": 1,
+        "maxValue": 100
+      }
+    ]
+  },
+  {
+    "name": "ban",
+    "description": "Bans a user",
+    "options": [
+      {
+        "type": "USER",
+        "name": "user",
+        "description": "Specify a user",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "name": "reason",
+        "description": "Reason for baning the user",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "tempban",
+    "description": "Temporarily bans a user",
+    "options": [
+      {
+        "type": "USER",
+        "name": "user",
+        "description": "Specify a user",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "name": "time",
+        "description": "how long the user is banned for s|m|h|d",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "name": "reason",
+        "description": "Reason for banning the user",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "unban",
+    "description": "Unbans a user",
+    "options": [
+      {
+        "type": "USER",
+        "name": "user",
+        "description": "Specify a user",
+        "required": true
+      }
+    ]
+  }
+]
