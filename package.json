@@ -19,6 +19,7 @@
   "homepage": "https://github.com/CarsonLenze/Starter-Bot#readme",
   "dependencies": {
     "discord.js": "^14.7.1",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "ioredis": "^5.2.5"
   }
 }
